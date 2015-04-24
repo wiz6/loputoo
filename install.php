@@ -9,6 +9,8 @@ require_once('config.php');
     <script>
         $(document).ready(function() {
             $('#install').click(function(){
+	            $('#msg-error').hide();
+	            $('#msg-done').hide();
                 $.ajax({
                     url:'lib/tracker.php?action=install',
                     data: {
@@ -21,10 +23,16 @@ require_once('config.php');
                     },
                     type:'POST'
                 }).done(function(data){
-                    console.log("..", data);
-                    $('#msg').show();
+	                if (!data) {
+		                return;
+	                }
+	                data = JSON.parse(data);
+	                if (!data.result) {
+		                $('#msg-error').text('Error: '+data.msg).show();
+		                return;
+	                }
+                    $('#msg-done').show();
                 }).fail(function() {
-                   console.log("fail");
                 });
             });
         });
@@ -32,9 +40,11 @@ require_once('config.php');
 </head>
 <body>
 <form method="POST">
-    <div id="msg" style="display:none; background-color: greenyellow; font-weight:bold; border: 1px solid green; width:100%; line-height: 50px; vertical-align: middle;">
+    <div id="msg-done" style="display:none; background-color: #00994C; font-weight:bold; border: 1px solid green; width:100%; line-height: 50px; vertical-align: middle;">
         Install complete!
     </div>
+	<div id="msg-error" style="display:none; background-color: #FF9999; font-weight:bold; border: 1px solid green; width:100%; line-height: 50px; vertical-align: middle;">
+	</div>
     <br>
     This install creates database tables and saves your db settings.<br>
     Insert your database configuration:<br>

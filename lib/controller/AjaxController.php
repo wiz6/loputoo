@@ -1,9 +1,7 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: test
- * Date: 18.04.15
- * Time: 15:37
+ * Class AjaxController handles all ajax requests
  */
 
 
@@ -18,32 +16,48 @@ class AjaxController {
         if (!$action) {
             return false;
         }
-
-        if ($action == 'sendUserEvents') {
-            $this->sendUserEvents($this->data['userEvents']);
+	    $res = null;
+        if ($action == 'saveUserEvents') {
+            $res = $this->saveUserEvents($this->data['userEvents']);
         } elseif($action == 'install') {
-
-            $this->install($this->data['database_config']);
+            $res = $this->install($this->data['database_config']);
         }
+	    echo json_encode($res);
     }
 
     private function install($db_config) {
-        $this->writeDbConfigToFile($db_config);
-        $this->eventDao->install();
+	    $res = $this->writeDbConfigToFile($db_config);
+	    if ($res['result']) {
+		    $res = $this->eventDao->install();
+	    }
+        return $res;
     }
-    private function sendUserEvents($data) {
-        echo "send data to db".var_dump($data);
+    private function saveUserEvents($data) {
         $this->eventDao->saveUserEvents($data);
     }
 
     private function writeDbConfigToFile($db_config) {
-        $myfile = fopen("../data.txt", "w") or die("Unable to open file!");
-        $txt = "db_name=".$db_config['db_name']."\n";
-        $txt .= "db_user=".$db_config['db_user']."\n";
-        $txt .= "db_password=".$db_config['db_password']."\n";
-        $txt .= "db_host=".$db_config['db_host'];
+	    $filename = '../data.txt';
 
-        fwrite($myfile, $txt);
-        fclose($myfile);
+	    if (!file_exists($filename)) {
+		    return array('result' => false,'msg' => 'File '.$filename.' doesnt exists!');
+	    }
+	    if (!is_writable($filename)) {
+		    return array('result' => false, 'msg' => 'File '.$filename.' is not writable!');
+	    }
+	    $fopen = fopen($filename, "w");
+	    if ($fopen === false) {
+		    return array('result' => false, 'msg' => 'Cant open file '.$filename.'!');
+	    }
+
+	    $txt = "db_name=".$db_config['db_name']."\n";
+	    $txt .= "db_user=".$db_config['db_user']."\n";
+	    $txt .= "db_password=".$db_config['db_password']."\n";
+	    $txt .= "db_host=".$db_config['db_host'];
+
+	    fwrite($fopen, $txt);
+	    fclose($fopen);
+	    return array('result' => true);
+
     }
 } 

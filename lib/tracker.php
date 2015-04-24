@@ -6,4 +6,4 @@ if (empty($_GET['action'])) {
 
 require_once('setup.php');
 $controller = new AjaxController($_POST);
-$response = $controller->doAction($_GET['action']);
+$controller->doAction($_GET['action']);
