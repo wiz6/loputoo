@@ -4,7 +4,7 @@ require_once('config.php');
 <!DOCTYPE html>
 <html>
 <head>
-    
+
     <title></title>
     <script src="<?=$config['cdn_uri']?>"></script>
     <script>

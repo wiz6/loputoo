@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: test
- * Date: 18.04.15
- * Time: 17:38
- */
 
 class UserEvent {
     public $posX;
@@ -12,4 +6,7 @@ class UserEvent {
     public $time;
     public $location;
     public $eventName;
-} 
+    public $sessionID;
+    public $userID;
+    public $keyCode;
+}

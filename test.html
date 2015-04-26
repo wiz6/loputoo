@@ -3,13 +3,51 @@
 <head>
     <title>Test page</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="tracker.js"></script>
+    <script src="js/tracker.js"></script>
+    <link href="css/style.css" media="all" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: '/loputoo/lib/tracker.php?action=getAllUsers',
+                type:'GET'
+            }).done(function(data) {
+                var data = JSON.parse(data);
+                if (!data.result) {
+                    return;
+                }
+                var l = 0;
+                for(var i in data.result) {
+                    if (!data.result.hasOwnProperty(i)) {
+                        continue;
+                    }
+                    $('#userList').append((l+1) + '. <b>' + i + '</b>');
+                    if (!data.result[i].sessions.length) {
+                        continue;
+                    }
+                    var sessionList = $('<div/>');
+                    for(var j = 0; j < data.result[i].sessions.length; j++) {
+                        sessionList.append(' ' + data.result[i].sessions[j].sessionID + ' | URL: '+data.result[i].sessions[j].location+'<br>');
+                    }
+                    $('#userList').append(sessionList).append('<br>');
+                    ++l;
+                }
+                console.log("-->", data);
+            });
+        });
+    </script>
 </head>
 <body>
+<img src="img/cursor.gif" id="cursor">
+<a href="#" onClick="Tracker.watchUserTrack();">See tracking</a>
+All users:
+<div id="userList">
+</div>
+<br>
 
-<a href="#"> Some link</a>
+<a href="#" onClick="Tracker.watchUserTrack();">See tracking</a>
 <br>
-<br>
-<div style="width: 400px; height: 200px; background-color: gray;">Some tekst...</div>
+Type some userID: <input type="text" id="userID" /> and sessionID <input type="text" id="sessionID" />
+
+
 </body>
 </html>

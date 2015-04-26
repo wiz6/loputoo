@@ -26,16 +26,99 @@
       <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="2" selection-start="130" selection-end="130" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+            <state line="2" column="83" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="153">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="install.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/install.php">
+      <file leaf-file-name="UserEvent.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/model/UserEvent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="71" selection-end="71" vertical-scroll-proportion="0.18181819" vertical-offset="0" max-vertical-offset="1122">
+            <state line="11" column="1" selection-start="189" selection-end="189" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventDao.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/dao/EventDao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="2" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.8064516" vertical-offset="1547" max-vertical-offset="2074">
+              <folding>
+                <marker date="1430077550343" expanded="true" signature="387:508" placeholder="INSERT INTO ..." />
+                <marker date="1430077550343" expanded="true" signature="1327:1365" placeholder="SELECT disti..userEvents..." />
+                <marker date="1430077550343" expanded="true" signature="1752:1791" placeholder="SELECT * FRO..userEvents..." />
+                <marker date="1430077550343" expanded="true" signature="2162:2204" placeholder="SELECT * FRO..userEvents..." />
+                <marker date="1430077550343" expanded="true" signature="2460:2526" placeholder="Select disti..userEvents..." />
+                <marker date="1430077550343" expanded="true" signature="2461:2526" placeholder="SELECT * FRO..userEvents..." />
+                <marker date="1430077550343" expanded="true" signature="2461:2525" placeholder="select sessi..userEvents..." />
+                <marker date="1430077550343" expanded="true" signature="2743:2798" placeholder="Select * fro..userEvents..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageDao.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/dao/PageDao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="30" selection-start="739" selection-end="748" vertical-scroll-proportion="-10.653846" vertical-offset="97" max-vertical-offset="680">
+              <folding>
+                <marker date="1430077339803" expanded="true" signature="318:356" placeholder="CREATE TABLE..IF..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="10" selection-start="1582" selection-end="1582" vertical-scroll-proportion="-9.961538" vertical-offset="438" max-vertical-offset="986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/controller/EventController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="31" selection-start="1618" selection-end="1618" vertical-scroll-proportion="-11.115385" vertical-offset="612" max-vertical-offset="1683">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tracker.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/tracker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="36" selection-start="473" selection-end="473" vertical-scroll-proportion="23.8" vertical-offset="918" max-vertical-offset="3468">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dao.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/dao/Dao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="-4.576923" vertical-offset="51" max-vertical-offset="714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tracker.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/tracker.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="43" selection-start="121" selection-end="121" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
@@ -43,11 +126,29 @@
       </file>
     </leaf>
   </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/install.php" />
+        <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/lib/model/UserEvent.php" />
+        <option value="$PROJECT_DIR$/lib/dao/Dao.php" />
+        <option value="$PROJECT_DIR$/tracker.js" />
+        <option value="$PROJECT_DIR$/lib/controller/AjaxController.php" />
+        <option value="$PROJECT_DIR$/lib/controller/APIController.php" />
+        <option value="$PROJECT_DIR$/lib/controller/ResultController.php" />
+        <option value="$PROJECT_DIR$/lib/tracker.php" />
+        <option value="$PROJECT_DIR$/lib/controller/EventController.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/lib/dao/PageDao.php" />
+        <option value="$PROJECT_DIR$/js/tracker.js" />
+        <option value="$PROJECT_DIR$/lib/dao/EventDao.php" />
       </list>
     </option>
   </component>
@@ -103,6 +204,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loputoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loputoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loputoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loputoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -110,7 +243,25 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\loputoo\js" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -163,17 +314,105 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.php">
+    <entry file="file://$PROJECT_DIR$/install.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="130" selection-end="130" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+        <state line="23" column="22" selection-start="750" selection-end="750" vertical-scroll-proportion="0.6969697" vertical-offset="0" max-vertical-offset="1122">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/install.php">
+    <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="71" selection-end="71" vertical-scroll-proportion="0.18181819" vertical-offset="0" max-vertical-offset="1122">
+        <state line="2" column="83" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="153">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="737" column="17" selection-start="11126" selection-end="11126" vertical-scroll-proportion="0.33215547" vertical-offset="12341" max-vertical-offset="15929">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="32" selection-start="38" selection-end="38" vertical-scroll-proportion="0.030303031" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/Dao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="-4.576923" vertical-offset="51" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tracker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="43" selection-start="121" selection-end="121" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="10" selection-start="1582" selection-end="1582" vertical-scroll-proportion="-9.961538" vertical-offset="438" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tracker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="36" selection-start="473" selection-end="473" vertical-scroll-proportion="23.8" vertical-offset="918" max-vertical-offset="3468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controller/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="31" selection-start="1618" selection-end="1618" vertical-scroll-proportion="-11.115385" vertical-offset="612" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/PageDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="30" selection-start="739" selection-end="748" vertical-scroll-proportion="-10.653846" vertical-offset="97" max-vertical-offset="680">
+          <folding>
+            <marker date="1430077339803" expanded="true" signature="318:356" placeholder="CREATE TABLE..IF..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/model/UserEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="1" selection-start="189" selection-end="189" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/EventDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="2" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.8064516" vertical-offset="1547" max-vertical-offset="2074">
+          <folding>
+            <marker date="1430077550343" expanded="true" signature="387:508" placeholder="INSERT INTO ..." />
+            <marker date="1430077550343" expanded="true" signature="1327:1365" placeholder="SELECT disti..userEvents..." />
+            <marker date="1430077550343" expanded="true" signature="1752:1791" placeholder="SELECT * FRO..userEvents..." />
+            <marker date="1430077550343" expanded="true" signature="2162:2204" placeholder="SELECT * FRO..userEvents..." />
+            <marker date="1430077550343" expanded="true" signature="2460:2526" placeholder="Select disti..userEvents..." />
+            <marker date="1430077550343" expanded="true" signature="2461:2526" placeholder="SELECT * FRO..userEvents..." />
+            <marker date="1430077550343" expanded="true" signature="2461:2525" placeholder="select sessi..userEvents..." />
+            <marker date="1430077550343" expanded="true" signature="2743:2798" placeholder="Select * fro..userEvents..." />
+          </folding>
         </state>
       </provider>
     </entry>

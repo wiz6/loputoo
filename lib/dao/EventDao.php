@@ -1,22 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: test
- * Date: 18.04.15
- * Time: 17:55
- */
 
-class EventDao {
-    private $db_name = null;
-    private $db_user = null;
-    private $db_password = null;
-    private $db_host = null;
-    private $conn = null;
+class EventDao extends Dao{
     public function __construct(){
         $this->createConnection();
     }
 
 	/**
+     * Saves user events into database with in one query
 	 * @param mixed array $data
 	 * @return bool
 	 */
@@ -25,8 +15,7 @@ class EventDao {
             return;
         }
 	    foreach($data as $event) {
-		    error_log($event['time']);
-		    $sql = 'INSERT INTO userEvents SET time=?, posX=?, posY=?, location=?, sessionID=?, userID=?, eventName=?, keyCode=?';
+		    $sql = 'INSERT INTO userEvents SET time=?, posX=?, posY=?, location=?, sessionID=?, userID=?, eventName=?, keyCode=?, elementID=?';
 		    $query = $this->conn->prepare($sql);
 		    $query->execute(
 			    array(
@@ -37,63 +26,92 @@ class EventDao {
 				    !empty($event['sessionID']) ? $event['sessionID'] : null,
 				    !empty($event['userID']) ? $event['userID'] : null,
 				    !empty($event['eventName']) ? $event['eventName'] : null,
-				    !empty($event['keyCode']) ? $event['keyCode'] : null)
+				    !empty($event['keyCode']) ? $event['keyCode'] : null,
+                    !empty($event['elementID']) ? $event['elementID'] : null)
 		    );
 	    }
 	    return true;
     }
 
-    private function createConnection() {
-        $file = file("../data.txt");
-        if (!$file) {
+    /**
+     * Get all users
+     * @return mixed array $result
+     */
+    public function getAllUsers() {
+        $sql = 'SELECT distinct userID FROM userEvents';
+
+        $result = array();
+        foreach($this->conn->query($sql) as $data) {
+            $result[] = $data['userID'];
+        }
+        return $result;
+    }
+
+    /**
+     * Get all events by user id
+     * @param int $userID
+     * @return mixed array
+     */
+    public function getEventsByUserId($userID) {
+        if (!$userID) {
             return;
         }
-        $conf = array();
-        foreach($file as $line) {
-            $field = explode('=', $line);
-            $conf[$field[0]] = $field[1];
-        }
-        $this->db_name = !empty($conf['db_name']) ? trim($conf['db_name']) : null;
-        $this->db_user = !empty($conf['db_user']) ? trim($conf['db_user']) : null;
-        $this->db_password = !empty($conf['db_password']) ? trim($conf['db_password']) : null;
-        $this->db_host = !empty($conf['db_host']) ? trim($conf['db_host']) : null;
+        $sql = 'SELECT * FROM userEvents WHERE userID=?';
+        $query = $this->conn->prepare($sql);
+        $query->execute(array($userID));
 
-        try {
-
-            $this->conn = new PDO("mysql:host=".$this->db_host.";dbname=".$this->db_name.";", $this->db_user, $this->db_password,array(
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-            ));
-	        return true;
-        }
-        catch(PDOException $e) {
-            return false;
-        }
+        return $query->fetchAll();
     }
 
-    public function install() {
-        $res = $this->createConnection();
-	    if (!$res) {
-		    return array('result' => false, 'msg' => 'Wrong data!');
-	    }
-        try {
-
-            $sql = 'CREATE TABLE IF NOT EXISTS userEvents(';
-            $sql .= 'time BIGINT DEFAULT NULL,';
-            $sql .= 'posX int DEFAULT NULL,';
-            $sql .= 'posY int DEFAULT NULL,';
-            $sql .= 'location varchar(300) DEFAULT NULL,';
-            $sql .= 'sessionID varchar(30) NOT NULL,';
-	        $sql .= 'eventName varchar(20) NOT NULL,';
-	        $sql .= 'keyCode INT DEFAULT NULL,';
-            $sql .= 'userID varchar(20) NOT NULL)';
-
-            $sth = $this->conn->prepare($sql);
-            $sth->execute();
-
-            return array('result' => true);
+    /**
+     * Get all user events per session
+     * @param int $sessionID
+     * @return mixed array
+     */
+    public function getEventsBySessionId($sessionID) {
+        if (!$sessionID) {
+            return;
         }
-        catch(PDOException $e) {
-            return array('result' => false, 'msg' => $e->getMessage());
-        }
+        $sql = 'SELECT * FROM userEvents WHERE sessionID=?';
+        $query = $this->conn->prepare($sql);
+        $query->execute(array($sessionID));
+
+        return $query->fetchAll();
     }
+
+    public function getSessionsByUserID($userID) {
+        if (!$userID) {
+            return;
+        }
+        $sql = 'Select distinct sessionID, location from userEvents where userID=?';
+        $query = $this->conn->prepare($sql);
+        $query->execute(array($userID));
+
+        return $query->fetchAll();
+    }
+
+    public function getEventsByUserAndSession($userID, $sessionID) {
+        $sql = 'Select * from userEvents where userID=? AND sessionID=?';
+        $query = $this->conn->prepare($sql);
+        $query->execute(array($userID, $sessionID));
+
+        return $query->fetchAll();
+    }
+
+    public function getMostPopularArea($radius) {
+
+    }
+
+    public function getMostUnPopularArea($radius) {
+
+    }
+
+    public function getMostPopularElemnentID() {
+
+    }
+    public function getMostUnPopularElementID() {
+
+    }
+
+
 } 
