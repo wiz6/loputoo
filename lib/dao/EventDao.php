@@ -15,7 +15,7 @@ class EventDao extends Dao{
             return;
         }
 	    foreach($data as $event) {
-		    $sql = 'INSERT INTO userEvents SET time=?, posX=?, posY=?, location=?, sessionID=?, userID=?, eventName=?, keyCode=?, elementID=?';
+		    $sql = 'INSERT INTO userEvents SET time=?, posX=?, posY=?, location=?, sessionID=?, userID=?, eventName=?, keyCode=?, elementID=?, isMobile=?';
 		    $query = $this->conn->prepare($sql);
 		    $query->execute(
 			    array(
@@ -27,7 +27,8 @@ class EventDao extends Dao{
 				    !empty($event['userID']) ? $event['userID'] : null,
 				    !empty($event['eventName']) ? $event['eventName'] : null,
 				    !empty($event['keyCode']) ? $event['keyCode'] : null,
-                    !empty($event['elementID']) ? $event['elementID'] : null)
+                    !empty($event['elementID']) ? $event['elementID'] : null,
+                    !empty($event['isMobile']) ? $event['isMobile'] : null,)
 		    );
 	    }
 	    return true;
@@ -112,6 +113,7 @@ class EventDao extends Dao{
     public function getMostUnPopularElementID() {
 
     }
+    public function getEventTimeDiff() {
 
-
+    }
 } 

@@ -44,16 +44,16 @@
       <file leaf-file-name="EventDao.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/dao/EventDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="2" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.8064516" vertical-offset="1547" max-vertical-offset="2074">
+            <state line="111" column="5" selection-start="3204" selection-end="3204" vertical-scroll-proportion="0.6451613" vertical-offset="1547" max-vertical-offset="2108">
               <folding>
-                <marker date="1430077550343" expanded="true" signature="387:508" placeholder="INSERT INTO ..." />
-                <marker date="1430077550343" expanded="true" signature="1327:1365" placeholder="SELECT disti..userEvents..." />
-                <marker date="1430077550343" expanded="true" signature="1752:1791" placeholder="SELECT * FRO..userEvents..." />
-                <marker date="1430077550343" expanded="true" signature="2162:2204" placeholder="SELECT * FRO..userEvents..." />
-                <marker date="1430077550343" expanded="true" signature="2460:2526" placeholder="Select disti..userEvents..." />
-                <marker date="1430077550343" expanded="true" signature="2461:2526" placeholder="SELECT * FRO..userEvents..." />
-                <marker date="1430077550343" expanded="true" signature="2461:2525" placeholder="select sessi..userEvents..." />
-                <marker date="1430077550343" expanded="true" signature="2743:2798" placeholder="Select * fro..userEvents..." />
+                <marker date="1430080236331" expanded="true" signature="387:520" placeholder="INSERT INTO ..." />
+                <marker date="1430080236331" expanded="true" signature="1416:1454" placeholder="SELECT disti..userEvents..." />
+                <marker date="1430080236331" expanded="true" signature="1841:1880" placeholder="SELECT * FRO..userEvents..." />
+                <marker date="1430080236331" expanded="true" signature="2251:2293" placeholder="SELECT * FRO..userEvents..." />
+                <marker date="1430080236331" expanded="true" signature="2549:2615" placeholder="Select disti..userEvents..." />
+                <marker date="1430080236331" expanded="true" signature="2550:2615" placeholder="SELECT * FRO..userEvents..." />
+                <marker date="1430080236331" expanded="true" signature="2550:2614" placeholder="select sessi..userEvents..." />
+                <marker date="1430080236331" expanded="true" signature="2832:2887" placeholder="Select * fro..userEvents..." />
               </folding>
             </state>
           </provider>
@@ -62,9 +62,9 @@
       <file leaf-file-name="PageDao.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/dao/PageDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="30" selection-start="739" selection-end="748" vertical-scroll-proportion="-10.653846" vertical-offset="97" max-vertical-offset="680">
+            <state line="23" column="33" selection-start="811" selection-end="811" vertical-scroll-proportion="-9.653846" vertical-offset="140" max-vertical-offset="697">
               <folding>
-                <marker date="1430077339803" expanded="true" signature="318:356" placeholder="CREATE TABLE..IF..." />
+                <marker date="1430079673904" expanded="true" signature="318:356" placeholder="CREATE TABLE..IF..." />
               </folding>
             </state>
           </provider>
@@ -100,7 +100,7 @@
       <file leaf-file-name="tracker.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tracker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="36" selection-start="473" selection-end="473" vertical-scroll-proportion="23.8" vertical-offset="918" max-vertical-offset="3468">
+            <state line="50" column="8" selection-start="1404" selection-end="1404" vertical-scroll-proportion="-7.04" vertical-offset="674" max-vertical-offset="3842">
               <folding />
             </state>
           </provider>
@@ -370,26 +370,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/tracker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="473" selection-end="473" vertical-scroll-proportion="23.8" vertical-offset="918" max-vertical-offset="3468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/controller/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="31" selection-start="1618" selection-end="1618" vertical-scroll-proportion="-11.115385" vertical-offset="612" max-vertical-offset="1683">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dao/PageDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="30" selection-start="739" selection-end="748" vertical-scroll-proportion="-10.653846" vertical-offset="97" max-vertical-offset="680">
-          <folding>
-            <marker date="1430077339803" expanded="true" signature="318:356" placeholder="CREATE TABLE..IF..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -400,18 +384,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dao/PageDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="33" selection-start="811" selection-end="811" vertical-scroll-proportion="-9.653846" vertical-offset="140" max-vertical-offset="697">
+          <folding>
+            <marker date="1430079673904" expanded="true" signature="318:356" placeholder="CREATE TABLE..IF..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tracker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="8" selection-start="1404" selection-end="1404" vertical-scroll-proportion="-7.04" vertical-offset="674" max-vertical-offset="3842">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/dao/EventDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="2" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.8064516" vertical-offset="1547" max-vertical-offset="2074">
+        <state line="111" column="5" selection-start="3204" selection-end="3204" vertical-scroll-proportion="0.6451613" vertical-offset="1547" max-vertical-offset="2108">
           <folding>
-            <marker date="1430077550343" expanded="true" signature="387:508" placeholder="INSERT INTO ..." />
-            <marker date="1430077550343" expanded="true" signature="1327:1365" placeholder="SELECT disti..userEvents..." />
-            <marker date="1430077550343" expanded="true" signature="1752:1791" placeholder="SELECT * FRO..userEvents..." />
-            <marker date="1430077550343" expanded="true" signature="2162:2204" placeholder="SELECT * FRO..userEvents..." />
-            <marker date="1430077550343" expanded="true" signature="2460:2526" placeholder="Select disti..userEvents..." />
-            <marker date="1430077550343" expanded="true" signature="2461:2526" placeholder="SELECT * FRO..userEvents..." />
-            <marker date="1430077550343" expanded="true" signature="2461:2525" placeholder="select sessi..userEvents..." />
-            <marker date="1430077550343" expanded="true" signature="2743:2798" placeholder="Select * fro..userEvents..." />
+            <marker date="1430080236331" expanded="true" signature="387:520" placeholder="INSERT INTO ..." />
+            <marker date="1430080236331" expanded="true" signature="1416:1454" placeholder="SELECT disti..userEvents..." />
+            <marker date="1430080236331" expanded="true" signature="1841:1880" placeholder="SELECT * FRO..userEvents..." />
+            <marker date="1430080236331" expanded="true" signature="2251:2293" placeholder="SELECT * FRO..userEvents..." />
+            <marker date="1430080236331" expanded="true" signature="2549:2615" placeholder="Select disti..userEvents..." />
+            <marker date="1430080236331" expanded="true" signature="2550:2615" placeholder="SELECT * FRO..userEvents..." />
+            <marker date="1430080236331" expanded="true" signature="2550:2614" placeholder="select sessi..userEvents..." />
+            <marker date="1430080236331" expanded="true" signature="2832:2887" placeholder="Select * fro..userEvents..." />
           </folding>
         </state>
       </provider>

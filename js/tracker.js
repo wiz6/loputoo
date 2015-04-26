@@ -12,6 +12,7 @@ function UserEvent(e) {
 	    sessionID: null,
 	    userID: null,
         elementID: null,
+        isMobile: null,
         //user hiljem,
         createEvent: function() {
             this.time = e.timeStamp;
@@ -23,6 +24,7 @@ function UserEvent(e) {
 	        this.userID = Tracker.getUserID();
 	        this.location = window.location.pathname;
             this.elementID = e.target.id;
+            this.isMobile = Tracker.isMobile.get();
             return this;
         }
     }
@@ -30,6 +32,26 @@ function UserEvent(e) {
 
 Tracker = {
     userEvents: [],
+    isMobile : {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        get: function() {
+            return (this.Android() || this.BlackBerry() || this.iOS() || this.Opera() || this.Windows());
+        }
+    },
     init: function() {
         if (!window.jQuery) {
             console.log("jQuery is not loaded.");

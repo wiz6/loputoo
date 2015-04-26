@@ -21,6 +21,7 @@ class PageDao extends Dao{
             $sql .= 'eventName varchar(20) NOT NULL,';
             $sql .= 'keyCode INT DEFAULT NULL,';
             $sql .= 'elementID varchar(100) DEFAULT NULL,';
+            $sql .= 'isMobile int DEFAULT NULL,';
             $sql .= 'userID varchar(20) NOT NULL)';
 
             $sth = $this->conn->prepare($sql);
